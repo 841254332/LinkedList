@@ -1,12 +1,12 @@
 //
-//  main.cpp
+//  LinkedList.cpp
 //  LinkedList
 //
 //  Created by luojiahua on 16/9/11.
 //  Copyright © 2016年 luojiahua. All rights reserved.
 //
 
-#include <iostream>
+#include <stdio.h>
 #include <iostream>
 
 using namespace std;
@@ -23,13 +23,10 @@ struct Node{
     struct Node *next;
 }Node, *LinkList;
 
-
-bool init(LinkList *L){
-    
+bool init(){
+    bool flag;
+    return flag;
 }
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    cout << "Hello, World!\n";
-    return 0;
-}
+
+
