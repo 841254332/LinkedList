@@ -25,6 +25,3 @@ typedef struct Node{
 
 typedef struct Node *LinkList;
 
-Status InitList(LinkList *L){
-    
-}
