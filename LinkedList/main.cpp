@@ -79,12 +79,36 @@ Status GetElem_L(LinkList L, int i, ElemType e){
     return OK;
 }
 
+Status DelElem_L(LinkList &L, int i){
+    Node *p;
+    Node *q;
+    ElemType data;
+    p = L->next;
+    while (i>0) {
+        p = p->next;
+        i--;
+        if (p->next == NULL) {
+            return ERROR;
+        }
+    }
+    q = p->next;
+    p->next = q->next;
+    data = q->data;
+    cout<<data<<endl;
+    delete q;
+    return OK;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     Node *L = new Node;
     int n = 5;
     CreateList_L(L, n);
     ShowList(L);
+    cout<<endl;
+    DelElem_L(L, 2);
+    ShowList(L);
+
 }
 
 
